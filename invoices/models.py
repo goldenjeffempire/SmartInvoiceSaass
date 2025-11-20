@@ -1,8 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
-import random
-import string
+import secrets
 
 
 class Invoice(models.Model):
@@ -60,12 +59,12 @@ class Invoice(models.Model):
 
     def generate_invoice_id(self):
         prefix = "INV"
-        random_chars = "".join(random.choices(string.digits, k=6))
-        invoice_id = f"{prefix}{random_chars}"
+        random_part = secrets.token_hex(3).upper()
+        invoice_id = f"{prefix}{random_part}"
 
         while Invoice.objects.filter(invoice_id=invoice_id).exists():
-            random_chars = "".join(random.choices(string.digits, k=6))
-            invoice_id = f"{prefix}{random_chars}"
+            random_part = secrets.token_hex(3).upper()
+            invoice_id = f"{prefix}{random_part}"
 
         return invoice_id
 

@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.http import HttpResponse
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
-from django.db.models import Sum, Count, Q, Avg
+from django.db.models import Count
 from django.db.models.functions import TruncMonth
 from datetime import datetime
 import calendar

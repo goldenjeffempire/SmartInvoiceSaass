@@ -1,6 +1,5 @@
 import pytest
 from decimal import Decimal
-from django.contrib.auth.models import User
 from invoices.models import Invoice, LineItem
 
 

@@ -1,8 +1,7 @@
 import pytest
 from django.urls import reverse
 from django.contrib.auth.models import User
-from invoices.models import Invoice, LineItem
-from decimal import Decimal
+from invoices.models import Invoice
 import json
 
 
