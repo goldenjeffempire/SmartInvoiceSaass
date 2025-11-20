@@ -7,13 +7,24 @@ Smart Invoice is a full-stack Django SaaS application for creating, managing, an
 **Core Value Proposition:** Simplify invoicing workflow from creation to payment tracking with multi-currency support, custom branding, and cloud-based invoice management.
 
 **Technology Stack:**
-- **Backend:** Django 5.0.1 (Python web framework)
+- **Backend:** Django 5.2.8 (Python web framework)
 - **Database:** PostgreSQL (production), SQLite (development)
 - **Frontend:** Server-side rendered templates with Tailwind CSS
 - **PDF Generation:** WeasyPrint
 - **Image Processing:** Pillow
-- **Deployment:** Render (cloud platform)
+- **Deployment:** Replit Deployments (autoscale), Render (cloud platform)
 - **Web Server:** Gunicorn with WhiteNoise for static files
+
+## Recent Changes
+
+**2025-11-20: Replit Environment Setup**
+- Installed Python 3.11 and required system dependencies (pango, cairo, gdk-pixbuf, shared-mime-info) for WeasyPrint
+- Installed all Python dependencies from requirements.txt
+- Updated .gitignore to preserve Replit configuration files
+- Ran database migrations to set up SQLite database for development
+- Collected static files for WhiteNoise static file serving
+- Configured Django dev server workflow on port 5000 with 0.0.0.0 host binding
+- Configured autoscale deployment for production with Gunicorn
 
 ## User Preferences
 

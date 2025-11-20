@@ -285,3 +285,4 @@ Traceback (most recent call last):
 django.core.exceptions.FieldError: Cannot resolve keyword 'total' into field. Choices are: account_name, account_number, bank_name, brand_color, brand_name, business_address, business_email, business_name, business_phone, client_address, client_email, client_name, client_phone, created_at, currency, due_date, id, invoice_count, invoice_date, invoice_id, line_items, logo, notes, status, tax_rate, updated_at, user, user_id
 WARNING 2025-11-20 19:33:53,326 basehttp 5225 140502617982656 "GET /favicon.ico HTTP/1.1" 404 6146
 WARNING 2025-11-20 19:40:08,355 basehttp 9235 140438638073536 "GET /favicon.ico HTTP/1.1" 404 6146
+WARNING 2025-11-20 22:51:29,513 basehttp 1179 139722174400192 "GET /favicon.ico HTTP/1.1" 404 6146

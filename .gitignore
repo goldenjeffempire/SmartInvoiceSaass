@@ -75,7 +75,6 @@ logs/
 *.log.*
 
 # Replit
-.replit
 .upm/
 .pythonlibs/
 .cache/
