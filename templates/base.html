@@ -22,6 +22,7 @@
     </style>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -32,8 +33,9 @@
             }
         }
     </script>
+    <script src="{% static 'js/dark-mode.js' %}"></script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
     <!-- Page Loader -->
     <div class="page-loader">
         <div class="loader-spinner"></div>
